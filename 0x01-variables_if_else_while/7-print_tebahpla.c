@@ -5,11 +5,11 @@
  * Return: Always 0 (Seccess)
  */
 
-int main (void)
+int main(void)
 {
 	char alpha = 'z';
 
-	while(alpha >= 'a')
+	while (alpha >= 'a')
 	{
 		putchar(alpha);
 		alpha--;

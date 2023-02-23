@@ -1,27 +1,24 @@
-
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- *main - print lowercase and uppercase a-zA-Z using putchar
- *Return: Always 0 (Success)
+ * main - prints the alphabet in lowercase and uppercase
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-    char ch;
+	int i;
 
-    for (ch = 'a'; ch <= 'z'; ch++)
-    {
-        putchar(ch);
-    }
+	for (i = 97; i < 123; i++)
+	{
+		_putchar(i);
+	}
+	for (i = 65; i < 91; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 
-    ch = 'A';
-    while (ch <= 'Z')
-    {
-        putchar(ch);
-        ch++;
-    }
-
-    putchar('\n');
-    return 0;
+	return (0);
 }
+

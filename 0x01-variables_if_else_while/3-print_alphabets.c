@@ -1,24 +1,29 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase and uppercase
+ * main - Entry point
+ *
+ * Description: Prints the alphabet in lowercase, and then in uppercase,
+ *              followed by a new line
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+        char ch;
 
-	for (i = 97; i < 123; i++)
-	{
-		_putchar(i);
-	}
-	for (i = 65; i < 91; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+        for (ch = 'a'; ch <= 'z'; ch++)
+        {
+                putchar(ch);
+        }
 
-	return (0);
+        for (ch = 'A'; ch <= 'Z'; ch++)
+        {
+                putchar(ch);
+        }
+
+        putchar('\n');
+
+        return (0);
 }
 
